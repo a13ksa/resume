@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+*{
+    font-family: 'Inter','Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+@media(max-width: 600px){
+    .container{
+        width: 90%;
+    }
+}
+button{
+    border: none;
+    background-color: #fff;
+}
+button:hover{
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    line-height: 150%;
+}
+header{
+    padding: 30px 0px;
+    background-color: #023047;
+}
+.heading{
+    border-radius: 30px;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: #FB8500 5px solid;
+    letter-spacing: 0.75em;
+}
+.heading h1{
+    margin-bottom: 15px;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+@media(max-width: 1000px){
+    .contact{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+.flex-contact{
+    display: flex;
+    gap: 0.4em;
+}
+.contact img{
+    height: 13.6px;
+    width: 13.34px;
+}
+.content{
+    margin-bottom: 40px;
+}
+.plans-and-targets{
+    margin-bottom: 40px;
+    display: flex;
+}
+.plans-and-targets img{
+    width: 250px;
+    height: auto;
+    border-radius: 30px 0px 0px 30px;
+}
+.plans-and-targets .title{
+    border-top-left-radius: 0px;
+}
+.plans-and-targets .text{
+    border-bottom-left-radius: 0px;
+    line-height: 150%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    padding: 20px 0px;
+    background-color: #023047;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+.text{
+    margin-top: -0px;
+    border: #FB8500 3px solid;
+    padding: 10px 30px;
+    border-radius: 0px 0px 30px 30px;
+    flex-grow: 1;
+}
+.flex-content{
+    display: flex;
+    gap: 40px;
+}
+.bonus li::before{
+    content: "+";
+    margin-right: 4px;
+}
