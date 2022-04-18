@@ -37,7 +37,7 @@ header{
 }
 .heading{
     border-radius: 30px;
-    padding: 20px 0px;
+    padding: 20px 5px;
     width: 100%;
     background-color: #fff;
     text-align: center;
@@ -54,10 +54,14 @@ header{
     margin: 30px 0px;
 }
 @media(max-width: 1000px){
+    .container{
+        width: 80%;
+    }
     .contact{
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        margin: 30px 0px;
     }
 }
 .flex-contact{
@@ -78,6 +82,7 @@ header{
 .plans-and-targets img{
     width: 250px;
     height: auto;
+    object-fit: cover;
     border-radius: 30px 0px 0px 30px;
 }
 .plans-and-targets .title{
@@ -86,6 +91,28 @@ header{
 .plans-and-targets .text{
     border-bottom-left-radius: 0px;
     line-height: 150%;
+}
+@media only screen and (max-width: 768px){
+    .plans-and-targets{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .plans-and-targets img{
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+    .plans-and-targets .title{
+        border-radius: 30px 30px 0 0;
+    }
+    .plans-and-targets .text{
+        border-radius: 0px 0px 30px 30px;
+        line-height: 150%;
+    }
+    .flex-content{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 .box{
     display: flex;
