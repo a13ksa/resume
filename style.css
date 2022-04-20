@@ -45,6 +45,14 @@ header{
     border: #FB8500 5px solid;
     letter-spacing: 0.75em;
 }
+@media(max-width: 500px){
+    h1{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1em;
+    }
+}
 .heading h1{
     margin-bottom: 15px;
 }
