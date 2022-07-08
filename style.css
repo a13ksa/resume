@@ -46,6 +46,9 @@ header{
     letter-spacing: 0.75em;
 }
 @media(max-width: 500px){
+    .heading{
+        letter-spacing: 0.65em;
+    }
     h1{
         font-size: 1.5em;
     }
@@ -153,4 +156,15 @@ header{
 .bonus li::before{
     content: "+";
     margin-right: 4px;
+}
+@media only screen and (max-width: 360px){
+    .heading{
+        letter-spacing: normal;
+    }
+    h1{
+        font-size: 1.25em;
+    }
+    h3{
+        font-size: 0.75em;
+    }
 }
